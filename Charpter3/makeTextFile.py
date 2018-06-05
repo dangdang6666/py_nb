@@ -20,6 +20,7 @@ while True:
     else:
         al.append(entry)
 
+
 """white lines to file with proper line-ending"""
 f = open(fname, 'w')
 f.writelines(["{}{}".format(x, ls) for x in al])
