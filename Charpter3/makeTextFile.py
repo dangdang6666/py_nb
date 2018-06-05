@@ -21,6 +21,6 @@ while True:
         al.append(entry)
 
 """white lines to file with proper line-ending"""
-fobj = open(fname, 'w')
-fobj.writelines(["{}{}".format(x, ls) for x in al])
-fobj.close()
+f = open(fname, 'w')
+f.writelines(["{}{}".format(x, ls) for x in al])
+f.close()
